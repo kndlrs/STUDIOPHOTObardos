@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       video1.currentTime = 6;
     });
      
-    //const video2 = await loadVideo("./assets/videos/Softbox Info.mp4");
+    // const video2 = await loadVideo("./assets/videos/Softbox Info.mp4");
     //const texture2 = new THREE.VideoTexture(video);
     //const geometry2 = new THREE.PlaneGeometry(1, 204/480);
     //const material2 = new THREE.MeshBasicMaterial({map: texture});
