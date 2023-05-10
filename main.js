@@ -1,4 +1,4 @@
-import {, loadAudio, loadVideo} from "./libs/loader.js";
+import {loadAudio, loadVideo} from "./libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     anchor1.group.add(plane1);
 
     anchor1.onTargetFound = () => {
-      video.play();
+      video1.play();
     }
     anchor1.onTargetLost = () => {
       video1.pause();
@@ -30,11 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
       video1.currentTime = 6;
     });
      
-   // const video2 = await loadVideo("./assets/videos/Softbox Info.mp4");
-   // const texture2 = new THREE.VideoTexture(video);
-   // const geometry2 = new THREE.PlaneGeometry(1, 204/480);
-   // const material2 = new THREE.MeshBasicMaterial({map: texture});
+    //const video2 = await loadVideo("./assets/videos/Softbox Info.mp4");
+    //const texture2 = new THREE.VideoTexture(video);
+    //const geometry2 = new THREE.PlaneGeometry(1, 204/480);
+    //const material2 = new THREE.MeshBasicMaterial({map: texture});
    // const plane2 = new THREE.Mesh(geometry, material);
+    
+    //const anchor2 = mindarThree.addAnchor(1);
+    //anchor2.group.add(plane2);
+
+   // anchor2.onTargetFound = () => {
+     // video2.play();
+    }
+   // anchor2.onTargetLost = () => {
+    //  video2.pause();
+    }
+   // video2.addEventListener( 'play', () => {
+    //  video2.currentTime = 6;
     
   //  const video3 = await loadVideo("./assets/videos/BackdropInfo.mov");
   //  const texture = new THREE.VideoTexture(video);
