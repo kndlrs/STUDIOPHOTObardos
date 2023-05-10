@@ -1,4 +1,4 @@
-import {loadGLTF, loadAudio, loadVideo} from "./libs/loader.js";
+import {, loadAudio, loadVideo} from "./libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     anchor1.group.add(plane1);
 
     anchor1.onTargetFound = () => {
-      video1.play();
+      video.play();
     }
     anchor1.onTargetLost = () => {
       video1.pause();
