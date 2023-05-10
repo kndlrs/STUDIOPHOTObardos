@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const {renderer, scene, camera} = mindarThree;
 
    
-    const video1 = await loadVideo("./assets/videos/Οδηγιες.mov");
+    const video1 = await loadVideo("./assets/videos/Softbox Info.mp4");
     const texture1 = new THREE.VideoTexture(video1);
     const geometry1 = new THREE.PlaneGeometry(1, 204/480);
     const material1 = new THREE.MeshBasicMaterial({map: texture1});
